@@ -10,7 +10,7 @@ header{position:sticky;top:0;z-index:20;background:rgba(251,248,242,.94);backdro
 .cats{display:flex;justify-content:center;gap:34px;padding:0 0 14px;font-size:11px;letter-spacing:.22em;text-transform:uppercase}
 .cats a{position:relative;padding-bottom:4px}.cats a:after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--orange);transition:.35s}.cats a:hover:after,.cats a.on:after{width:100%}
 h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:400;letter-spacing:.06em}
-.hero{position:relative;height:92vh;overflow:hidden;display:grid;grid-template-columns:1fr 1fr}
+.hero{position:relative;height:92vh;overflow:hidden;background:#2b2622 url(v/hero.jpg) center/cover}
 .hero img,.hero video{width:100%;height:100%;object-fit:cover}
 .hero .cap{position:absolute;inset:auto 0 9vh 0;text-align:center;color:#fff;text-shadow:0 2px 24px #0006}
 .hero h1{font-size:clamp(46px,7vw,104px);letter-spacing:.18em}
@@ -47,4 +47,5 @@ footer{background:var(--cream);border-top:1px solid var(--line);padding:80px 5vw
 .ci{display:flex;gap:14px;margin:18px 0;font-size:13px}.ci img{width:76px;aspect-ratio:4/5;object-fit:cover}
 .rv{opacity:0;transform:translateY(28px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}
 .ph-t{text-align:center;padding:70px 5vw 0}.ph-t h1{font-size:52px}
-@media(max-width:900px){.grid{grid-template-columns:1fr 1fr;gap:30px 14px}.banners{grid-template-columns:1fr}.split,.pdp{grid-template-columns:1fr}.split img{height:60vh}.strip{grid-template-columns:repeat(4,1fr)}.fg{grid-template-columns:1fr 1fr}.hero{grid-template-columns:1fr}.hero>:nth-child(2){display:none}.cats{gap:16px;overflow-x:auto;padding:0 5vw 12px;justify-content:flex-start}.gal{grid-template-columns:1fr}.th{display:flex;gap:8px;order:2}.info{position:static}}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr;gap:30px 14px}.banners{grid-template-columns:1fr}.split,.pdp{grid-template-columns:1fr}.split img{height:60vh}.strip{grid-template-columns:repeat(4,1fr)}.fg{grid-template-columns:1fr 1fr}.hero{height:80vh}.cats{gap:16px;overflow-x:auto;padding:0 5vw 12px;justify-content:flex-start}.gal{grid-template-columns:1fr}.th{display:flex;gap:8px;order:2}.info{position:static}}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(43,38,34,.45))}.hero .cap{z-index:2}@media(prefers-reduced-motion:reduce){.hero video{display:none}}
