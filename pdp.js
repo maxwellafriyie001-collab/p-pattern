@@ -6,7 +6,7 @@ d.innerHTML=`<div class=gal><div class=th>${p.media.map((m,i)=>`<div class=tw da
 ${p.colors.length?`<div class=lbl>Colour: <span id=cl>${st.color}</span></div><div>${p.colors.map((c,i)=>`<button class="opt col ${i?'':'on'}" data-c="${c[0]}" data-i=${c[1]}><span class=dot style="background:${sw(c[0])};vertical-align:-1px"></span>${c[0]}</button>`).join('')}</div>`:''}
 ${p.sizes.length?`<div class=lbl>Size</div><div>${p.sizes.map(s=>`<button class="opt sz" data-s=${s}>${s}</button>`).join('')}</div><div style="font-size:11px;color:#958a7e">Unsure of your size? DM us and we'll help.</div>`:''}
 <p class=d>${p.desc}</p><button class="btn o" id=addb>Add to bag</button><a class=btn style="width:100%;text-align:center;margin-top:10px" href="${p.ig}" target=_blank>View on Instagram</a>
-<div class=det><div>Price: ${price(p)}${p.price?' USD':', confirmed by DM'}</div><div>Worldwide delivery</div><div>Order by Instagram DM or email</div></div></div>`;
+<div class=det><div>Price: ${price(p)} USD</div><div>Worldwide delivery</div><div>Secure checkout</div></div></div>`;
 const sel=i=>{st.img=i;const m=p.media[i];z.innerHTML=m.v?`<video id=main src="${m.v}" poster="${m.p}" muted autoplay loop playsinline></video>`:pic(m.j,p.name,'',false).replace('<img','<img id=main');z.classList.toggle('isv',!!m.v);document.querySelectorAll('.th .tw').forEach(t=>t.classList.toggle('on',t.dataset.i==i))};sel(0);
 document.querySelectorAll('.th .tw').forEach(t=>t.onclick=()=>sel(+t.dataset.i));
 document.querySelectorAll('.col').forEach(b=>b.onclick=()=>{document.querySelectorAll('.col').forEach(x=>x.classList.remove('on'));b.classList.add('on');st.color=b.dataset.c;cl.textContent=st.color;sel(+b.dataset.i)});
