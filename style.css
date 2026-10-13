@@ -64,4 +64,4 @@ footer{background:var(--cream);border-top:1px solid var(--line);padding:80px 5vw
 @media(max-width:900px){.tiles{grid-template-columns:1fr 1fr;gap:8px;padding-bottom:70px}.tile span{font-size:22px;bottom:18px}.car{grid-auto-columns:68%;gap:14px}.arr{display:none}.campaign{height:75vh}.cap2{left:6vw;right:6vw}.story{padding:80px 7vw}.intro{margin:70px auto}.sec{padding:70px 5vw}}
 .hero{min-height:560px;max-height:920px}.campaign{max-height:820px}.split img{max-height:860px}
 @media(max-width:900px){.hero{max-height:760px;min-height:520px}.campaign{max-height:640px}.split img{max-height:560px}}
-html,body{overflow-x:hidden}@media(max-width:900px){.strip{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:42%;overflow-x:auto;scrollbar-width:none}}
+html,body{overflow-x:hidden}@media(max-width:900px){.strip{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:42%;overflow-x:auto;scrollbar-width:none}}.cats a{white-space:nowrap;flex:none}@media(max-width:900px){.ann{font-size:9px;letter-spacing:.15em}.hd{padding:14px 5vw}.logo{font-size:22px;letter-spacing:.22em}.car{padding:0 5vw;scroll-padding:0 5vw}}.car{scroll-padding:0 5vw}
